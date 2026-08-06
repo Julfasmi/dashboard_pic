@@ -1,19 +1,3 @@
-# PACKAGES ==========
-library(shiny)
-library(ggplot2)
-library(tidygeocoder)
-library(plotly)
-library(DT)
-library(gt)
-library(tidyr)
-library(purrr)
-library(readxl)
-library(dplyr)
-library(stringr)
-library(geosphere)
-library(openxlsx)
-
-
 # RENAME KOLOM ==========
 rename_kolom <- function(df) {
   df %>%

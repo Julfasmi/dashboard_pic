@@ -1,24 +1,3 @@
-# PACKAGES ==========
-library(shiny)
-library(ggplot2)
-library(tidygeocoder)
-library(plotly)
-library(DT)
-library(gt)
-library(tidyr)
-library(purrr)
-library(readxl)
-library(dplyr)
-library(stringr)
-library(geosphere)
-library(openxlsx)
-
-# data.valid <- read.xlsx(FILE_VALID)
-
-# hasil.cluster <- read.xlsx(FILE_CLUSTER)
-
-# jumlah.pic <- read.xlsx(FILE_SUMMARY)
-
 # SERVER ==========
 server <- function(input, output, session) {
   ## FILTER KANCAB =====

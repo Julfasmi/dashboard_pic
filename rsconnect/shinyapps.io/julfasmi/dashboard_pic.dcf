@@ -5,6 +5,6 @@ account: julfasmi
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17672678
-bundleId: 12372381
+bundleId: 12373615
 url: https://julfasmi.shinyapps.io/dashboard_pic/
 version: 1

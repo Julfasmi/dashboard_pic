@@ -1,28 +1,3 @@
-# PACKAGES ==========
-library(shiny)
-library(ggplot2)
-library(tidygeocoder)
-library(plotly)
-library(DT)
-library(gt)
-library(tidyr)
-library(purrr)
-library(readxl)
-library(dplyr)
-library(stringr)
-library(geosphere)
-library(openxlsx)
-
-# data.valid <- read.xlsx(FILE_VALID)
-
-hasil.cluster <- read.xlsx("output/Hasil Cluster.xlsx")
-
-# jumlah.pic <- read.xlsx(FILE_SUMMARY)
-
-# DATA ==========
-df_plot <- hasil.cluster
-
-
 # UI ==========
 ui <- fluidPage(
   titlePanel("Dashboard Persebaran Mitra by Cluster"),

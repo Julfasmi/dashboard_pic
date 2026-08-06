@@ -1,36 +1,31 @@
-# ==========================================================
-# PACKAGES
-# ==========================================================
-
+# PACKAGES ==========
 library(shiny)
-library(ggplot2)
+library(dplyr)
 library(plotly)
 library(DT)
-library(gt)
+library(openxlsx)
+library(readxl)
+library(ggplot2)
+library(geosphere)
+library(stringr)
 library(tidyr)
 library(purrr)
-library(readxl)
-library(dplyr)
-library(stringr)
-library(geosphere)
-library(openxlsx)
+library(gt)
 library(tidygeocoder)
 
-# ==========================================================
-# SOURCE
-# ==========================================================
 
+# SOURCE ==========
 source("R/config.R")
 source("R/helper.R")
+source("R/process.R")
 
-# ==========================================================
-# MEMBACA HASIL PREPROCESSING
-# ==========================================================
 
-# data.valid <- read.xlsx(FILE_VALID)
+# DATA
+hasil <- process_data()
 
-hasil.cluster <- read.xlsx("output/Hasil Cluster.xlsx")
-
-# jumlah.pic <- read.xlsx(FILE_SUMMARY)
+data.valid <- hasil$data.valid
+hasil.cluster <- hasil$hasil.cluster
+jumlah.pic <- hasil$jumlah.pic
+ringkasan.cluster <- hasil$ringkasan.cluster
 
 df_plot <- hasil.cluster
