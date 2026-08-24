@@ -20,7 +20,7 @@ source("R/helper.R")
 source("R/process.R")
 
 
-# DATA
+# DATA ==========
 hasil <- process_data()
 
 data.valid <- hasil$data.valid
